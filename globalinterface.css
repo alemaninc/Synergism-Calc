@@ -1,0 +1,14 @@
+body {
+	background-color: #000000;
+	color:#ffffff;
+	font-size: 12px;
+	font-family:Arial,Helvetica,sans-serif
+}
+input {
+	height:12px;
+	font-size:12px;
+}
+table, tr, td {
+	table-layout: fixed;
+	border-collapse:collapse;
+}

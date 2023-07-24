@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Singularity Penalties by alemaninc</title>
+		<link rel="stylesheet" href="../globalinterface.css">
+		<style>
+body{background-color:#000000;color:#ffffff;font-size:15px;}
+td,th{width:calc(25vw - 25px);border-style:solid;border-width:1px;border-color:#333;}
+.col1{width:200px;}
+.col2{width:125px;}
+.col3{width:125px;}
+.col4{width:125px;}
+		</style>
+	</head>
+	<body>
+		<label for="initialSing">Current Singularity:</label><input type="number" min="0" max="300" step="1" value="0" id="initialSing"><br>
+		<label for="finalSing">Next Singularity:</label><input type="number" min="0" max="300" step="1" value="0" id="finalSing"><br>
+		<label for="penaltyDebuff">Penalty reduction (value):</label><input type="number" min="0" max="4" step="1" value="0" id="penaltyDebuff"><br>
+		<label for="noOcteractActive">'No Octeracts' active?:</label><input type="checkbox" id="noOcteractActive"><br>
+		<label for="noOcteractCompletions">'No Octeracts' completions:</label><input type="number" min="0" max="10" step="1" value="0" id="noOcteractCompletions"><br>
+		<label for="wowPassZ">Wow Pass Z:</label><input type="number" min="0" max="1000" step="1" value="0" id="wowPassZ"><br>
+		<label for="chronometerZ">Chronometer Z:</label><input type="number" min="0" max="1000" step="1" value="0" id="chronometerZ"><br>
+		<label for="photokinetics">Abstract Photokinetics:</label><input type="number" min="0" max="100" step="1" value="0" id="photokinetics"><br>
+		<label for="exokinetics">Abstract Exokinetics:</label><input type="number" min="0" max="250" step="1" value="0" id="exokinetics"><br>
+		<button onClick="calculate()">Calculate</button>
+		<div id="output"></div>
+		<script src="main.js"></script>
+	</body>
+</html>
